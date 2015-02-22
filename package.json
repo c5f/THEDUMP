@@ -1,0 +1,22 @@
+{
+  "name": "THEDUMP",
+  "version": "0.0.0",
+  "description": "Social music site inspired by SAM'S MUSIC DUMP facebook group",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padmaia/THEDUMP.git"
+  },
+  "author": "Maia Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/padmaia/THEDUMP/issues"
+  },
+  "homepage": "https://github.com/padmaia/THEDUMP",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
