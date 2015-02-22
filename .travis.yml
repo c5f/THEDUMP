@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+- iojs
+deploy:
+  provider: heroku
+  api_key:
+    secure: oNyFoR248HJR4p1C+FidrIb5OEO7oWWJvZiOGj/lujxaXTHG25TWu11VUo+bqxSV1yIw5A9f1NJ7zQQ6vMRTrmmbxz5eQMG95FW7qpsjgmA2At8FpmfizcX427R6XRKZMeeOLGHU93c0iRReZUDSXAXrHLYWldorHvpssXv9Bgk=
