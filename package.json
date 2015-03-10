@@ -4,7 +4,7 @@
   "description": "Social music site inspired by SAM'S MUSIC DUMP facebook group",
   "main": "app.js",
   "scripts": {
-    "start": "echo starting",
+    "start": "node app.js",
     "test": "echo testing"
 
   },
