@@ -18,5 +18,8 @@
   "homepage": "https://github.com/padmaia/THEDUMP",
   "dependencies": {
     "express": "^4.11.2"
+  },
+  "engines": {
+    "node": "0.12.x"
   }
 }
