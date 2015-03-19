@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo testing"
-
+    "test": "echo testing",
+    "watchify": "watchify app.js -o static/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/padmaia/THEDUMP",
   "dependencies": {
-    "express": "^4.11.2"
+    "express": "^4.11.2",
+    "jade": "^1.9.2",
+    "react": "^0.13.1",
+    "reflux": "^0.2.7"
   },
   "engines": {
     "node": "0.12.x"
+  },
+  "devDependencies": {
+    "reactify": "^1.1.0"
   }
 }
