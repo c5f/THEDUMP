@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/padmaia/THEDUMP",
   "dependencies": {
+    "bookshelf": "^0.7.9",
     "express": "^4.11.2",
     "immutable": "^3.6.4",
     "jade": "^1.9.2",
+    "knex": "^0.7.6",
+    "pg": "^4.3.0",
     "react": "^0.13.1",
     "reflux": "^0.2.7"
   },
