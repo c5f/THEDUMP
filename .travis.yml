@@ -1,5 +1,5 @@
 language: node_js
 node_js:
-	- iojs
+  - iojs
 before_script:
-	- npm install -g mocha
+  - npm install -g mocha
