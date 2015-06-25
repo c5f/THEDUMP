@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- "0.12"
+- "iojs"
 notifications:
   slack:
     secure: WO0icEZ5mOQ0o+ald22EsLeXpiNuSDfN47k2AMVkI07IU70SrrX5s5dVbVFWtRsJQEMoFmmfZF2VFwDvFB5TlknMeCoybj7qs/om9yTHi7Ou8bY8Cxh4e3EbJsYIYX15mVKVdsvW551aaEz1vsi56ErEN3jBt50hVzfRatIrYfs=
