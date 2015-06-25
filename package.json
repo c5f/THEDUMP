@@ -8,6 +8,7 @@
     "build": "npm run build:js && npm run build:css",
     "build:js": "browserify web/js/app.js -t babelify --outfile server/public/js/bundle.js",
     "build:css": "compass compile",
+    "deploy": "npm run build && npm run babel-node -- server/server.js",
     "lint": "eslint .",
     "live-reload": "",
     "start": "npm run watch",

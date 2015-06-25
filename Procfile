@@ -1,1 +1,1 @@
-web: babe-node server.js
+web: npm run deploy
