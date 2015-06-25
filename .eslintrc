@@ -1,0 +1,17 @@
+{
+	"ecmaFeatures": {
+		"jsx": true
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"amd": true,
+		"mocha": true
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"quotes": [1, "single", "avoid-escape"]
+	}
+}

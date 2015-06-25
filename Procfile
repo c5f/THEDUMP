@@ -1,1 +1,1 @@
-web: node server.js
+web: babe-node server.js

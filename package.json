@@ -4,9 +4,20 @@
   "description": "Social music site inspired by SAM'S MUSIC DUMP facebook group",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "mocha",
-    "watchify": "watchify app.js -o static/bundle.js"
+    "babel-node": "babel-node --debug",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "browserify web/js/app.js -t babelify --outfile server/public/js/bundle.js",
+    "build:css": "compass compile",
+    "lint": "eslint .",
+    "live-reload": "",
+    "start": "npm run watch",
+    "test": "npm run lint && npm run test:web && npm run test:server",
+    "test:web": "mocha --compilers js:babel/register web/js/test",
+    "test:server": "mocha --compilers js:babel/register server/api/test",
+    "watch": "parallelshell 'npm run watch:build' 'npm run watch:server' 'npm run watch:test'",
+    "watch:build": "nodemon -w web --ignore web/js/test/ --exec npm run build",
+    "watch:server": "nodemon --watch server/ --ignore server/api/test/ --exec npm run babel-node -- server/server.js",
+    "watch:test": "nodemon --ignore server/public  --exec npm test"
   },
   "repository": {
     "type": "git",
@@ -32,10 +43,17 @@
     "node": "0.12.x"
   },
   "devDependencies": {
+    "babel": "^5.4.7",
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.4",
     "chai": "^2.2.0",
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
+    "jsdom": "^5.4.3",
     "live-reload": "^1.1.0",
     "mocha": "^2.2.4",
-    "reactify": "^1.1.0",
+    "nodemon": "^1.3.7",
+    "parallelshell": "^1.1.1",
     "sinon": "^1.14.1"
   }
 }
