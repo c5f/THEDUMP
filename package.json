@@ -44,7 +44,7 @@
     "reflux": "^0.2.7"
   },
   "engines": {
-    "iojs": "2.3.x"
+    "node": "0.12.x"
   },
   "devDependencies": {
     
