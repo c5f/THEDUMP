@@ -48,6 +48,9 @@
   },
   "devDependencies": {
     
+    "babel": "^5.4.7",
+    "babelify": "^6.1.1",
+    "bookshelf": "^0.7.9",
     "chai": "^2.2.0",
     "eslint": "^0.23.0",
     "eslint-plugin-react": "^2.5.2",
