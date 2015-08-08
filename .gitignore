@@ -3,3 +3,5 @@
 node_modules
 .DS_Store
 .sass-cache
+server/public/js/bundle.js
+server/public/stylesheets/styles.css
