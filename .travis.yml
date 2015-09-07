@@ -8,9 +8,12 @@ install:
 
 before_script:
   - "export PATH=$HOME/.meteor:$PATH"
+  - "cd tests/cucumber"
+  - "npm install"
+  - "cd ../.."
 
 script:
-  - meteor --test --release velocity:METEOR@1.1.0.3_1
+  - VELOCITY_CI=1 meteor --test --release velocity:METEOR@1.1.0.3_1
 
 services:
   - mongodb
