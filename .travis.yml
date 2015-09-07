@@ -2,6 +2,8 @@ sudo: required
 language: node_js
 node_js:
   - "0.12"
+jdk:
+  - oraclejdk8
 
 install:
   - "curl https://install.meteor.com | /bin/sh"
