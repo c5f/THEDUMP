@@ -1,17 +1,39 @@
 {
-	"ecmaFeatures": {
-		"jsx": true
-	},
-	"env": {
-		"browser": true,
-		"node": true,
-		"amd": true,
-		"mocha": true
-	},
-	"plugins": [
-		"react"
-	],
-	"rules": {
-		"quotes": [1, "single", "avoid-escape"]
-	}
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "destructuring": true,
+        "forOf": true,
+        "generators": false,
+        "modules": true,
+        "objectLiteralComputedProperties": true,
+        "objectLiteralDuplicateProperties": false,
+        "objectLiteralShorthandMethods": true,
+        "objectLiteralShorthandProperties": true,
+        "spread": true,
+        "superInFunctions": true,
+        "templateStrings": true,
+        "jsx": true
+    },
+    "env": {
+        "browser": true,
+        "meteor": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "React": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-undef": 0,
+        "no-unused-vars": [2, {          // http://eslint.org/docs/rules/no-unused-vars
+            "vars": "local",
+            "args": "after-used"
+        }],
+    }
 }

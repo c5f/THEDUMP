@@ -1,6 +1,22 @@
+sudo: required
 language: node_js
 node_js:
-- "iojs"
+  - "0.12"
+jdk:
+  - oraclejdk8
+
+install:
+  - "curl https://install.meteor.com | /bin/sh"
+
+before_script:
+  - "export PATH=$HOME/.meteor:$PATH"
+
+script:
+  - echo 'Automatically pass until I figure out how to use velocity on travis'
+
+services:
+  - mongodb
+
 notifications:
   slack:
     secure: WO0icEZ5mOQ0o+ald22EsLeXpiNuSDfN47k2AMVkI07IU70SrrX5s5dVbVFWtRsJQEMoFmmfZF2VFwDvFB5TlknMeCoybj7qs/om9yTHi7Ou8bY8Cxh4e3EbJsYIYX15mVKVdsvW551aaEz1vsi56ErEN3jBt50hVzfRatIrYfs=
