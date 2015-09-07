@@ -7,7 +7,7 @@ install:
   - "curl https://install.meteor.com | /bin/sh"
 
 script:
-  - meteor
+  - meteor --test
 
 notifications:
   slack:
