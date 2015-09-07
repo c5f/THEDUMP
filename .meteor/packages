@@ -8,6 +8,5 @@ meteor-platform
 autopublish
 insecure
 react
-xolvio:cucumber
 sanjo:jasmine
 velocity:html-reporter
