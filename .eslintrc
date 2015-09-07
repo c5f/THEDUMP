@@ -23,7 +23,17 @@
         "meteor": true
     },
     "extends": "eslint:recommended",
+    "globals": {
+        "React": true
+    },
     "plugins": [
         "react"
-    ]
+    ],
+    "rules": {
+        "no-undef": 0,
+        "no-unused-vars": [2, {          // http://eslint.org/docs/rules/no-unused-vars
+            "vars": "local",
+            "args": "after-used"
+        }],
+    }
 }
