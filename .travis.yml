@@ -6,8 +6,14 @@ node_js:
 install:
   - "curl https://install.meteor.com | /bin/sh"
 
+before_script:
+  - "export PATH=$HOME/.meteor:$PATH"
+
 script:
   - meteor --test --release velocity:METEOR@1.1.0.3_1
+
+services:
+  - mongodb
 
 notifications:
   slack:
